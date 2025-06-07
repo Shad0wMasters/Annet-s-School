@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annet's School - English Courses</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scroll-progress"></div>
+    
+    <button class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" class="logo-text">Annet's School</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="index.html#courses">Курсы</a>
+            <a href="index.html#about">О нас</a>
+            <a href="index.html#contact">Контакты</a>
+        </div>
+        <div class="nav-buttons">
+            <div class="user-menu" style="display: none;">
+                <div class="profile-icon">
+                    <img src="https://api.dicebear.com/7.x/initials/svg?seed=?" alt="Профиль" class="avatar">
+                    <span class="user-name"></span>
+                </div>
+                <div class="dropdown-menu">
+                    <a href="profile.html" class="menu-item">
+                        <i class="fas fa-user"></i>
+                        Профиль
+                    </a>
+                    <a href="groups.html" class="menu-item">
+                        <i class="fas fa-users"></i>
+                        Мои группы
+                    </a>
+                    <a href="courses.html" class="menu-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        Мои курсы
+                    </a>
+                    <a href="settings.html" class="menu-item">
+                        <i class="fas fa-cog"></i>
+                        Настройки
+                    </a>
+                    <a href="admin.html" class="menu-item admin-link" style="display: none;">
+                        <i class="fas fa-shield-alt"></i>
+                        Панель администратора
+                    </a>
+                    <div class="divider"></div>
+                    <a href="#" class="menu-item logout-btn">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Выход
+                    </a>
+                </div>
+            </div>
+            <button class="login-btn">
+                Вход
+                <span class="button-effect"></span>
+            </button>
+            <button class="register-btn">
+                Регистрация
+                <span class="button-effect"></span>
+            </button>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="wave-container">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+        </div>
+        <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="animate-text">Welcome to Annet's School</h1>
+            <p class="animate-text-delay">Your journey to English fluency starts here</p>
+            <button class="cta-button">
+                Start Learning
+                <span class="button-effect"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <h2>Our Courses</h2>
+        <div class="course-grid">
+            <div class="course-card" data-aos="fade-up">
+                <div class="course-image">
+                    <i class="fas fa-book-reader"></i>
+                </div>
+                <h3>Beginner Level</h3>
+                <p>Perfect for those just starting their English journey</p>
+                <ul class="course-features">
+                    <li><i class="fas fa-check"></i> Basic Grammar and Vocabulary</li>
+                    <li><i class="fas fa-check"></i> Simple Conversation Practice</li>
+                    <li><i class="fas fa-check"></i> Reading Fundamentals</li>
+                    <li><i class="fas fa-check"></i> 2 Classes per Week</li>
+                </ul>
+                <div class="course-price">
+                    <span>From $50/month</span>
+                </div>
+                <button onclick="window.location.href='courses.html'">
+                    Learn More
+                    <span class="button-effect"></span>
+                </button>
+            </div>
+            <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="course-image">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3>Intermediate Level</h3>
+                <p>Enhance your speaking and writing skills</p>
+                <ul class="course-features">
+                    <li><i class="fas fa-check"></i> Advanced Grammar</li>
+                    <li><i class="fas fa-check"></i> Business English</li>
+                    <li><i class="fas fa-check"></i> Writing Skills</li>
+                    <li><i class="fas fa-check"></i> 3 Classes per Week</li>
+                </ul>
+                <div class="course-price">
+                    <span>From $75/month</span>
+                </div>
+                <button onclick="window.location.href='courses.html'">
+                    Learn More
+                    <span class="button-effect"></span>
+                </button>
+            </div>
+            <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="course-image">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Advanced Level</h3>
+                <p>Master complex grammar and vocabulary</p>
+                <ul class="course-features">
+                    <li><i class="fas fa-check"></i> Native-like Fluency</li>
+                    <li><i class="fas fa-check"></i> IELTS/TOEFL Prep</li>
+                    <li><i class="fas fa-check"></i> Academic Writing</li>
+                    <li><i class="fas fa-check"></i> 4 Classes per Week</li>
+                </ul>
+                <div class="course-price">
+                    <span>From $100/month</span>
+                </div>
+                <button onclick="window.location.href='courses.html'">
+                    Learn More
+                    <span class="button-effect"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Details Section -->
+    <section id="course-details" class="course-details">
+        <h2>Why Choose Our Courses?</h2>
+        <div class="features-grid">
+            <div class="feature-card" data-aos="zoom-in">
+                <i class="fas fa-users"></i>
+                <h3>Small Groups</h3>
+                <p>Maximum 6 students per class for personalized attention</p>
+            </div>
+            <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-laptop"></i>
+                <h3>Online & Offline</h3>
+                <p>Flexible learning options to suit your schedule</p>
+            </div>
+            <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-certificate"></i>
+                <h3>Certification</h3>
+                <p>Receive official certification upon course completion</p>
+            </div>
+            <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-clock"></i>
+                <h3>Flexible Schedule</h3>
+                <p>Morning, afternoon, and evening classes available</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="statistics" class="statistics">
+        <div class="stats-container">
+            <div class="stat-item" data-aos="fade-up">
+                <i class="fas fa-user-graduate"></i>
+                <span class="counter">1000</span>
+                <p>Students Taught</p>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <span class="counter">15</span>
+                <p>Expert Teachers</p>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-award"></i>
+                <span class="counter">95</span>
+                <p>Success Rate %</p>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-globe"></i>
+                <span class="counter">20</span>
+                <p>Countries Reached</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-content" data-aos="fade-right">
+                <h2>About Annet's School</h2>
+                <p class="about-description">We are passionate about teaching English and helping our students achieve their language goals. With years of experience and dedicated teachers, we provide the best learning environment for your success.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Professional Native Teachers</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Modern Teaching Methods</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Individual Approach</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Comfortable Learning Environment</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image" data-aos="fade-left">
+                <div class="image-container">
+                    <i class="fas fa-graduation-cap about-icon"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info-details">
+                            <h3>Our Location</h3>
+                            <p>123 Education Street, City</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="info-details">
+                            <h3>Phone Number</h3>
+                            <p>+1 234 567 8900</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info-details">
+                            <h3>Email Address</h3>
+                            <p>info@annetsschool.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="info-details">
+                            <h3>Working Hours</h3>
+                            <p>Mon - Fri: 9:00 AM - 8:00 PM</p>
+                            <p>Sat: 9:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone" required>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Select Course</option>
+                                <option value="beginner">Beginner Level</option>
+                                <option value="intermediate">Intermediate Level</option>
+                                <option value="advanced">Advanced Level</option>
+                            </select>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                            <span class="focus-border"></span>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            Send Message
+                            <span class="button-effect"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Login -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <input type="email" id="loginEmail" placeholder="Email" required>
+                    <span class="focus-border"></span>
+                    <span class="error-message" id="loginEmailError"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                    <span class="focus-border"></span>
+                    <span class="error-message" id="loginPasswordError"></span>
+                </div>
+                <button type="submit" class="submit-btn">
+                    Login
+                    <span class="button-effect"></span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Имя</label>
+                    <input type="text" id="registerName" required>
+                    <span class="error-message" id="registerNameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" required>
+                    <span class="error-message" id="registerEmailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Пароль</label>
+                    <input type="password" id="registerPassword" required>
+                    <span class="error-message" id="registerPasswordError"></span>
+                    <small class="password-hint">Минимум 8 символов</small>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Подтвердите пароль</label>
+                    <input type="password" id="registerConfirmPassword" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group creator-code" style="position: relative;">
+                    <label for="creatorCode">Код создателя (необязательно)</label>
+                    <input type="password" id="creatorCode">
+                    <i class="fas fa-question-circle" style="position: absolute; right: 10px; top: 35px; cursor: pointer;" 
+                       title="Если у вас есть специальный код создателя, введите его здесь"></i>
+                </div>
+                <button type="submit" class="submit-btn">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

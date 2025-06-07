@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Anita's School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="courses.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">
+                <i class="fas fa-graduation-cap"></i>
+                Anita's School
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="courses.html" class="active">Courses</a>
+            <a href="groups.html">Groups</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <h1>Start Your English Journey Today</h1>
+        <p>Choose the perfect course for your level and goals</p>
+    </div>
+
+    <section class="courses-section">
+        <div class="course-filters">
+            <button class="filter-btn active" data-filter="all">All Levels</button>
+            <button class="filter-btn" data-filter="beginner">Beginner</button>
+            <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+            <button class="filter-btn" data-filter="advanced">Advanced</button>
+        </div>
+
+        <div class="course-grid">
+            <div class="course-card" data-level="beginner">
+                <div class="course-banner beginner">
+                    <div class="level-tag">Beginner</div>
+                    <i class="fas fa-book-reader course-icon"></i>
+                </div>
+                <div class="course-content">
+                    <h2>Beginner Level</h2>
+                    <p>Perfect for those starting their English journey</p>
+                    <div class="course-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Basic grammar and vocabulary</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Simple conversation skills</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Reading and writing fundamentals</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>2 lessons per week</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>Small groups (max 6 students)</span>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <div class="price-box">
+                            <span class="price">$50</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <button class="enroll-button">
+                        <span>Enroll Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="course-card" data-level="intermediate">
+                <div class="course-banner intermediate">
+                    <div class="level-tag">Intermediate</div>
+                    <i class="fas fa-comments course-icon"></i>
+                </div>
+                <div class="course-content">
+                    <h2>Intermediate Level</h2>
+                    <p>For students ready to advance their skills</p>
+                    <div class="course-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Advanced grammar concepts</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Fluent conversation practice</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Business English basics</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>3 lessons per week</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>Small groups (max 5 students)</span>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <div class="price-box">
+                            <span class="price">$75</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <button class="enroll-button">
+                        <span>Enroll Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="course-card" data-level="advanced">
+                <div class="course-banner advanced">
+                    <div class="level-tag">Advanced</div>
+                    <i class="fas fa-graduation-cap course-icon"></i>
+                </div>
+                <div class="course-content">
+                    <h2>Advanced Level</h2>
+                    <p>Master complex English concepts</p>
+                    <div class="course-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Native-level communication</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Professional writing skills</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Advanced business English</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>4 lessons per week</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>Small groups (max 4 students)</span>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <div class="price-box">
+                            <span class="price">$100</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <button class="enroll-button">
+                        <span>Enroll Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <h2>Why Choose Our Courses?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>Expert Teachers</h3>
+                <p>Learn from experienced native speakers and certified instructors</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-users"></i>
+                <h3>Small Groups</h3>
+                <p>Maximum attention and practice time for each student</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-laptop"></i>
+                <h3>Modern Platform</h3>
+                <p>Access to online materials and interactive learning tools</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-certificate"></i>
+                <h3>Certification</h3>
+                <p>Receive official certificates upon course completion</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Choose Contact Method</h2>
+            <p class="modal-subtitle">Select your preferred way to discuss course details</p>
+            <div class="contact-options">
+                <a href="https://t.me/anita_k_an" class="contact-option telegram" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                    <div class="contact-info">
+                        <span class="platform">Telegram</span>
+                        <span class="contact-detail">@anita_k_an</span>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </a>
+                <a href="https://wa.me/380123456789" class="contact-option whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <div class="contact-info">
+                        <span class="platform">WhatsApp</span>
+                        <span class="contact-detail">+380123456789</span>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </a>
+                <a href="https://discord.gg/anita_k_an" class="contact-option discord" target="_blank">
+                    <i class="fab fa-discord"></i>
+                    <div class="contact-info">
+                        <span class="platform">Discord</span>
+                        <span class="contact-detail">Anita's School</span>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="courses.js"></script>
+</body>
+</html> 

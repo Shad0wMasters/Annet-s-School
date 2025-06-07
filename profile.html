@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль - Школа Аниты</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Основной контейнер -->
+    <div class="profile-container">
+        <!-- Шапка профиля -->
+        <div class="profile-header">
+            <div class="profile-cover">
+                <div class="wave wave1"></div>
+                <div class="wave wave2"></div>
+                <div class="wave wave3"></div>
+            </div>
+            <div class="profile-info">
+                <div class="profile-avatar">
+                    <form id="avatarForm" enctype="multipart/form-data">
+                        <input type="file" id="avatar-upload" name="avatar" accept="image/*" style="display: none;">
+                        <img src="https://api.dicebear.com/7.x/initials/svg?seed=?" alt="Профиль" class="large-avatar" id="avatar-preview">
+                        <button type="button" class="edit-avatar" onclick="document.getElementById('avatar-upload').click()">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="profile-details">
+                    <h1 class="profile-name">Загрузка...</h1>
+                    <p class="profile-email">Загрузка...</p>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <span class="stat-value">0</span>
+                            <span class="stat-label">Курсов</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">0</span>
+                            <span class="stat-label">Групп</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Основной контент -->
+        <div class="profile-content">
+            <!-- Боковое меню -->
+            <div class="profile-sidebar">
+                <a href="#main" class="sidebar-item active">
+                    <i class="fas fa-user"></i>
+                    Основное
+                </a>
+                <a href="#security" class="sidebar-item">
+                    <i class="fas fa-lock"></i>
+                    Безопасность
+                </a>
+                <a href="#notifications" class="sidebar-item">
+                    <i class="fas fa-bell"></i>
+                    Уведомления
+                </a>
+                <a href="#role" class="sidebar-item">
+                    <i class="fas fa-user-shield"></i>
+                    Роль
+                </a>
+            </div>
+
+            <!-- Секции профиля -->
+            <div class="profile-sections">
+                <!-- Основные настройки -->
+                <div class="profile-section active" id="main">
+                    <h2>Основные настройки</h2>
+                    <form id="mainForm" class="profile-form">
+                        <div class="form-group">
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <button type="submit" class="save-btn">
+                            <i class="fas fa-save"></i>
+                            Сохранить
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Безопасность -->
+                <div class="profile-section" id="security">
+                    <h2>Безопасность</h2>
+                    <form id="securityForm" class="profile-form">
+                        <div class="form-group">
+                            <label for="currentPassword">Текущий пароль</label>
+                            <input type="password" id="currentPassword" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newPassword">Новый пароль</label>
+                            <input type="password" id="newPassword" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Подтвердите пароль</label>
+                            <input type="password" id="confirmPassword" required>
+                        </div>
+                        <button type="submit" class="save-btn">
+                            <i class="fas fa-key"></i>
+                            Обновить пароль
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Уведомления -->
+                <div class="profile-section" id="notifications">
+                    <h2>Настройки уведомлений</h2>
+                    <div class="notification-settings">
+                        <div class="notification-option">
+                            <div class="option-info">
+                                <h3>Email уведомления</h3>
+                                <p>Получать обновления о курсах по email</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" id="emailNotif" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="notification-option">
+                            <div class="option-info">
+                                <h3>Обновления курсов</h3>
+                                <p>Уведомления о новых уроках и материалах</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" id="courseNotif" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="notification-option">
+                            <div class="option-info">
+                                <h3>Сообщения группы</h3>
+                                <p>Уведомления о действиях в группе</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" id="groupNotif">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Настройки роли -->
+                <div class="profile-section" id="role">
+                    <h2>Настройки роли</h2>
+                    <div class="role-info">
+                        <div class="current-role">
+                            <h3>Текущая роль: <span class="role-display">Загрузка...</span></h3>
+                            <p class="role-description"></p>
+                        </div>
+                        
+                        <div class="creator-code-section">
+                            <h3>Настройки доступа</h3>
+                            <p>Расширенные настройки для системы:</p>
+                            <div class="code-input-group">
+                                <input type="password" id="creatorCode" placeholder="Ключ доступа">
+                                <button id="verifyCode" class="verify-btn">
+                                    <i class="fas fa-key"></i>
+                                    Проверить
+                                </button>
+                            </div>
+                            <p class="code-hint">Для получения дополнительной информации обратитесь к администратору</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="nav.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html> 

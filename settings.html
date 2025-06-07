@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Annet's School</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="settings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scroll-progress"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Annet's School</h1>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#courses">Courses</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="nav-buttons">
+            <div class="user-menu" style="display: none;">
+                <div class="profile-icon">
+                    <img src="https://api.dicebear.com/7.x/initials/svg?seed=?" alt="Profile" class="avatar">
+                    <span class="user-name"></span>
+                </div>
+                <div class="dropdown-menu">
+                    <a href="profile.html" class="menu-item">
+                        <i class="fas fa-user"></i>
+                        Profile
+                    </a>
+                    <a href="groups.html" class="menu-item">
+                        <i class="fas fa-users"></i>
+                        My Groups
+                    </a>
+                    <a href="settings.html" class="menu-item active">
+                        <i class="fas fa-cog"></i>
+                        Settings
+                    </a>
+                    <div class="divider"></div>
+                    <a href="#" class="menu-item logout-btn">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+                </div>
+            </div>
+            <button class="login-btn">
+                Login
+                <span class="button-effect"></span>
+            </button>
+            <button class="register-btn">
+                Register
+                <span class="button-effect"></span>
+            </button>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Settings Section -->
+    <section class="settings-section">
+        <div class="settings-container">
+            <h1>Settings</h1>
+            
+            <div class="settings-grid">
+                <!-- Account Settings -->
+                <div class="settings-card">
+                    <div class="settings-header">
+                        <i class="fas fa-user-circle"></i>
+                        <h2>Account Settings</h2>
+                    </div>
+                    <div class="settings-content">
+                        <div class="setting-item">
+                            <label>Email Notifications</label>
+                            <div class="toggle-switch">
+                                <input type="checkbox" id="emailNotifications" checked>
+                                <span class="toggle-slider"></span>
+                            </div>
+                        </div>
+                        <div class="setting-item">
+                            <label>SMS Notifications</label>
+                            <div class="toggle-switch">
+                                <input type="checkbox" id="smsNotifications">
+                                <span class="toggle-slider"></span>
+                            </div>
+                        </div>
+                        <div class="setting-item">
+                            <label>Two-Factor Authentication</label>
+                            <div class="toggle-switch">
+                                <input type="checkbox" id="twoFactorAuth">
+                                <span class="toggle-slider"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Privacy Settings -->
+                <div class="settings-card">
+                    <div class="settings-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h2>Privacy Settings</h2>
+                    </div>
+                    <div class="settings-content">
+                        <div class="setting-item">
+                            <label>Profile Visibility</label>
+                            <select id="profileVisibility" class="settings-select">
+                                <option value="public">Public</option>
+                                <option value="friends">Friends Only</option>
+                                <option value="private">Private</option>
+                            </select>
+                        </div>
+                        <div class="setting-item">
+                            <label>Show Online Status</label>
+                            <div class="toggle-switch">
+                                <input type="checkbox" id="onlineStatus" checked>
+                                <span class="toggle-slider"></span>
+                            </div>
+                        </div>
+                        <div class="setting-item">
+                            <label>Share Learning Progress</label>
+                            <div class="toggle-switch">
+                                <input type="checkbox" id="shareProgress" checked>
+                                <span class="toggle-slider"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appearance Settings -->
+                <div class="settings-card">
+                    <div class="settings-header">
+                        <i class="fas fa-paint-brush"></i>
+                        <h2>Appearance</h2>
+                    </div>
+                    <div class="settings-content">
+                        <div class="setting-item">
+                            <label>Theme</label>
+                            <select id="themeSelect" class="settings-select">
+                                <option value="light">Light</option>
+                                <option value="dark">Dark</option>
+                                <option value="system">System Default</option>
+                            </select>
+                        </div>
+                        <div class="setting-item">
+                            <label>Font Size</label>
+                            <select id="fontSize" class="settings-select">
+                                <option value="small">Small</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="large">Large</option>
+                            </select>
+                        </div>
+                        <div class="setting-item">
+                            <label>Animations</label>
+                            <div class="toggle-switch">
+                                <input type="checkbox" id="animations" checked>
+                                <span class="toggle-slider"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Language Settings -->
+                <div class="settings-card">
+                    <div class="settings-header">
+                        <i class="fas fa-language"></i>
+                        <h2>Language & Region</h2>
+                    </div>
+                    <div class="settings-content">
+                        <div class="setting-item">
+                            <label>Interface Language</label>
+                            <select id="language" class="settings-select">
+                                <option value="en">English</option>
+                                <option value="uk">Ukrainian</option>
+                                <option value="ru">Russian</option>
+                            </select>
+                        </div>
+                        <div class="setting-item">
+                            <label>Time Zone</label>
+                            <select id="timezone" class="settings-select">
+                                <option value="UTC+0">UTC+0 London</option>
+                                <option value="UTC+2">UTC+2 Kyiv</option>
+                                <option value="UTC+3">UTC+3 Moscow</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Save Button -->
+            <div class="settings-actions">
+                <button class="save-settings-btn">
+                    <i class="fas fa-save"></i>
+                    Save Changes
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="settings.js"></script>
+</body>
+</html> 
